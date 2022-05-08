@@ -10,7 +10,7 @@ export default {
       info: "",
       surah: ref([]),
       infosurah: ref([]),
-    };
+    }
   },
 
   watch: {
