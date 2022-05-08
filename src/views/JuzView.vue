@@ -9,7 +9,7 @@ export default {
       loading: true,
       juzke: ref([]),
       bacajuz: ref([]),
-    };
+    }
   },
 
   watch:{
@@ -51,8 +51,8 @@ export default {
           this.error = true;
         })
         .finally(() => (this.loading = false));
-    },
-  },
+    }
+  }
 };
 </script>
 
