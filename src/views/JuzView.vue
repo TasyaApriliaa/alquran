@@ -12,11 +12,11 @@ export default {
     };
   },
 
-  watch: {
-    $route() {
+  watch:{
+    $route(){
       this.getJuzke();
       this.getBacaJuz();
-    },
+    }
   },
 
   mounted() {
@@ -59,8 +59,8 @@ export default {
 <template>
   <div class="text-center mt-5">
     <h1>--- Juz {{ $route.params.id }} ---</h1>
-    <h4 v-for="juzs in bacajuz" :key="juzs.id" class="text-end mt-5">
-      {{ juzs.text_uthmani }} {{ juzs.verse_key }}
+    <h4 v-for="quran in bacajuz" :key="quran.id" class="text-lg-end mt-5">
+      {{ quran.text_uthmani }} {{ quran.verse_key }}
     </h4>
   </div>
 </template>
