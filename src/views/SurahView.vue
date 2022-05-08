@@ -91,7 +91,7 @@ export default {
     <input v-model="cari" class="form-control me-2" type="search" placeholder="Search" aria-label="Search"/>
 
     <div v-if="cari">
-      <div class="mt-5 text-lg-center">
+      <div class="mt-5 ">
         <h1>{{ judul?.name_complex }}</h1>
         <br>
         <h2>({{ name?.name }})</h2>
