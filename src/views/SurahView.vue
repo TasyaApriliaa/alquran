@@ -88,21 +88,18 @@ export default {
 <template>
   <div class="text-lg-center mt-5">
     <h1 class="text-lg-center">Masukkan nomor surah!</h1>
-    <input v-model="cari" class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+    <input v-model="cari" class="form-control me-2" type="search" placeholder="Search" aria-label="Search"/>
     <div v-if="cari">
       <div class="mt-5">
         <h1>{{ judul?.name_complex }}</h1>
         <br>
-        <h1>{{ judul?.name_arabic }}</h1>
-        <br>
-        <h3>({{ name.name }})</h3>
+        <h3>({{ name?.name }})</h3>
         <br>
         <h4>Tempat Diturunkannya: {{ judul?.revelation_place }}</h4>
         <br>
         <h5>Terdiri dari {{judul?.verses_count}} ayat</h5>
         <p v-if="audio" class="text-lg-center mt-4">
-          <audio v-bind:src="audio.audio_url" controls>
-          </audio>
+          <audio v-bind:src="audio?.audio_url" controls></audio>
         </p>
       </div>
     </div>
