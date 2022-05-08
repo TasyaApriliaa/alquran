@@ -86,8 +86,8 @@ export default {
 </script>
 
 <template>
-  <div class="text-lg-center mt-5">
-    <h1 class="text-lg-center">Masukkan nomor surah!</h1>
+  <div class="text-center mt-5">
+    <h1>Masukkan nomor surah yang akan dicari!</h1>
     <input v-model="cari" class="form-control me-2" type="search" placeholder="Search" aria-label="Search"/>
 
     <div v-if="cari">
@@ -99,18 +99,18 @@ export default {
         <h4>Tempat Diturunkannya: {{ judul?.revelation_place }}</h4>
         <br>
         <h4>Terdiri dari {{judul?.verses_count}} ayat</h4>
+      </div>
         <p v-if="audio" class="text-lg-center mt-4">
           <audio v-bind:src="audio?.audio_url" controls></audio>
         </p>
-      </div>
     </div>
+  </div>
     <div v-if="cari" v-for="(ayat,index) in surah" :key="index" class="card">
       <div class="card-body">
         <h5 class="card-title text-end  mt-3">{{ ayat?.text_uthmani}}{{ayat?.verse_key}}</h5>
         <p class="card-title text-start mt-3" v-html="terjemahan[index]?.text"></p>
       </div>
     </div>
-  </div>
 </template>
 <style>
 h1 {

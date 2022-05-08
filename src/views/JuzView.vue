@@ -59,7 +59,7 @@ export default {
 <template>
   <div class="text-center mt-5">
     <h1>--- Juz {{ $route.params.id }} ---</h1>
-    <h4 v-for="quran in bacajuz" :key="quran.id" class="text-lg-end mt-5">
+    <h4 v-for="quran in bacajuz" :key="quran.id" class="text-end mt-5">
       {{ quran.text_uthmani }} {{ quran.verse_key }}
     </h4>
   </div>
