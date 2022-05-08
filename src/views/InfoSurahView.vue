@@ -17,7 +17,7 @@ export default {
     $route() {
       this.getSurah();
       this.getInfoSurah();
-    },
+    }
   },
 
   mounted() {
@@ -54,8 +54,8 @@ export default {
           this.error = true;
         })
         .finally(() => (this.loading = false));
-    },
-  },
+    }
+  }
 };
 </script>
 
