@@ -13,6 +13,13 @@ export default {
     }
   },
 
+  watch:{
+    $route(){
+      this.getJuzke()
+      this.getBacaJuz()
+    }
+  },
+
   mounted() {
     this.getJuzke()
     this.getBacaJuz()
