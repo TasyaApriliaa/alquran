@@ -11,7 +11,7 @@ export default {
       name: [],
       terjemahan: ref([]),
       audio: ref([]),
-    };
+    }
   },
 
   watch: {
@@ -20,7 +20,7 @@ export default {
       this.getJudul();
       this.getTerjemahan();
       this.getAudio();
-    },
+    }
   },
 
   mounted() {
@@ -89,15 +89,16 @@ export default {
   <div class="text-lg-center mt-5">
     <h1 class="text-lg-center">Masukkan nomor surah!</h1>
     <input v-model="cari" class="form-control me-2" type="search" placeholder="Search" aria-label="Search"/>
+
     <div v-if="cari">
       <div class="mt-5">
         <h1>{{ judul?.name_complex }}</h1>
         <br>
-        <h3>({{ name?.name }})</h3>
+        <h2>({{ name?.name }})</h2>
         <br>
         <h4>Tempat Diturunkannya: {{ judul?.revelation_place }}</h4>
         <br>
-        <h5>Terdiri dari {{judul?.verses_count}} ayat</h5>
+        <h4>Terdiri dari {{judul?.verses_count}} ayat</h4>
         <p v-if="audio" class="text-lg-center mt-4">
           <audio v-bind:src="audio?.audio_url" controls></audio>
         </p>
