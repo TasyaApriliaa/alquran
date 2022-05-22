@@ -58,6 +58,7 @@ export default {
 
 <template>
   <div class="text-center mt-5">
+    <img src="../assets/alquran.png" alt="logo" width="550">
     <h1>--- Juz {{ $route.params.id }} ---</h1>
     <h4 v-for="quran in bacajuz" :key="quran.id" class="text-end mt-5">
       {{ quran.text_uthmani }} {{ quran.verse_key }}
