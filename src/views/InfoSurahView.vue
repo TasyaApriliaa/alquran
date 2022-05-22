@@ -61,7 +61,7 @@ export default {
 
 <template>
   <div class="text-center mt-5 mb-5">
-    <img src="../assets/alquran.png" alt="logo" width="550">
+    <img src="../assets/alquran.png" alt="logo" width="350">
     <h1>--- Surah {{ surah.name_complex }} ---</h1>
   </div>
   <div class="text-start">

@@ -100,7 +100,7 @@ export default {
 
 <style>
 .container {
-  margin-bottom: 200%;
+  margin-bottom: 210%;
 }
 .nav {
   background: linear-gradient(45deg, #f3afc4, #efc5ac);

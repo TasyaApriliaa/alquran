@@ -87,7 +87,7 @@ export default {
 
 <template>
   <div class="text-center mt-5">
-    <img src="../assets/alquran.png" alt="logo" width="550">
+    <img src="../assets/alquran.png" alt="logo" width="350">
     <h1>Masukkan nomor surah yang akan dicari!</h1>
     <input v-model="cari" class="form-control me-2" type="search" placeholder="Search" aria-label="Search"/>
 

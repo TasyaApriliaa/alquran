@@ -7,7 +7,6 @@ export default {
 <template>
   <footer class="text-black">
     <div class="d-flex justify-content-center">
-      <p></p>
       <p>&clubsuit; Al-qur'an &clubsuit;</p>
     </div>
   </footer>
